@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Vida Saludable</title>
+
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #f2f2f2;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000;
+            color: #00e5ff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        section {
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], textarea, select {
+            width: 90%;
+            padding: 8px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        /* Botón */
+        .btn {
+            background-color: #4dd0e1;
+            color: #000;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #ffcc00;
+        }
+
+        /* Botón volver */
+        a[href="index.html"] {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333333; 
+            color: #ffffff;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        a[href="index.html"]:hover {
+            background-color: #555555;
+        }
+    </style>
+</head>
+
+<body>
+
+<marquee>
+    <h1>Formulario: Vida Saludable</h1>
+</marquee>
+
+<section>
+
+    <!-- FORMULARIO con envio al correo -->
+    <form action="https://formsubmit.co/quintero.verchiel_23070728@cetis054.edu.mx" method="POST">
+
+        <!-- ocultos -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Nuevo formulario de Vida Saludable">
+
+        <!-- Reactivo 1 -->
+        <label>1. ¿Qué se entiende por “vida saludable”?</label><br>
+        <input type="radio" name="r1" value="Comer únicamente frutas y verduras"> Comer únicamente frutas y verduras.<br>
+        <input type="radio" name="r1" value="Mantener un equilibrio físico, mental y social"> Mantener un equilibrio físico, mental y social.<br>
+        <input type="radio" name="r1" value="Hacer ejercicio todos los días sin descansar"> Hacer ejercicio todos los días sin descansar.<br><br>
+
+        <!-- Reactivo 2 -->
+        <label>2. ¿Por qué es importante cuidar la salud? (Selecciona todas las que apliquen)</label><br>
+        <input type="checkbox" name="r2_mejor_vida" value="Mejor calidad de vida"> Permite tener una mejor calidad de vida.<br>
+        <input type="checkbox" name="r2_prevenir" value="Prevención de enfermedades"> Ayuda a prevenir enfermedades.<br>
+        <input type="checkbox" name="r2_aspecto" value="Buen aspecto físico"> Solo sirve para tener buen aspecto físico.<br><br>
+
+        <!-- Reactivo 3 -->
+        <label>3. ¿Cuál de los siguientes es un hábito saludable?</label><br>
+        <select name="r3">
+            <option value="Dormir menos de 4 horas">Dormir menos de 4 horas al día</option>
+            <option value="Beber suficiente agua">Beber suficiente agua diariamente</option>
+            <option value="Fumar ocasionalmente">Fumar ocasionalmente</option>
+        </select><br>
+
+        <!-- Reactivo 4 -->
+        <label>4. ¿Cuántos minutos de actividad física se recomiendan al día para una vida saludable?</label><br>
+        <input type="text" name="r4" placeholder="Escribe tu respuesta"><br>
+
+        <!-- Reactivo 5 -->
+        <label>5. ¿Qué beneficios trae mantener buenos hábitos alimenticios?</label><br>
+        <input type="radio" name="r5" value="Aumenta el riesgo de enfermedades"> Aumenta el riesgo de enfermedades.<br>
+        <input type="radio" name="r5" value="Favorece el correcto funcionamiento del cuerpo"> Favorece el correcto funcionamiento del cuerpo.<br>
+        <input type="radio" name="r5" value="Reduce la energía disponible"> Reduce la energía disponible en el día.<br><br>
+
+        <!-- Reactivo 6 -->
+        <label>6. Escribe dos ejemplos de hábitos saludables:</label><br>
+        <textarea name="r6" rows="3" placeholder="Ejemplo: beber agua, dormir bien"></textarea><br>
+
+        <!-- Reactivo 7 -->
+        <label>7. ¿Cuál consideras que es el valor más importante de la salud?</label><br>
+        <textarea name="r7" rows="3" placeholder="Escribe tu opinión"></textarea><br>
+
+        <!-- Botón -->
+        <button class="btn" type="submit">Enviar</button>
+
+    </form>
+
+    <br><br>
+    <a href="index.html">Volver al inicio</a>
+
+</section>
+
+</body>
+</html>
+
